@@ -3,3 +3,8 @@ out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 
+*.class
+/target
+/out
+.idea
+*.old
