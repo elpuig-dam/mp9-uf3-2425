@@ -17,7 +17,7 @@
 ```
 <hr>
 
-### Setmana 2: 22/01 - 28/01
+### Setmana 2: 21/11 - 28/11
 
 >**Tasca 2**  
 > Seguint l'esquema après a la tasca 1, crea un servidor que generi un número aleatori(fes-ho amb la classe '[SecretNum](mp9/uf3/udp/unicast/joc/SecretNum.java)' i atengui
