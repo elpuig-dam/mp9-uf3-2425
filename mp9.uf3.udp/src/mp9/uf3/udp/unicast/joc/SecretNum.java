@@ -26,9 +26,6 @@ public class SecretNum {
 		else return 2;
 	}
 
-
-	
-
 	public int getNum() {
 		return num;
 	}
