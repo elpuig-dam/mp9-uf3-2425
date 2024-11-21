@@ -41,8 +41,7 @@ public class DatagramSocketServer {
     //El server retorna al client el mateix missatge que li arriba però en majúscules
     private byte[] processData(byte[] data, int lenght) {
         String msg = new String(data,0,lenght);
-        msg = "Hola sóc el profe ";
-        msg += msg.toUpperCase();
+        msg = msg.toUpperCase();
         //Imprimir el missatge rebut i retornar-lo
         System.out.printf("(%s) %s%n",clientIP,msg);
 
