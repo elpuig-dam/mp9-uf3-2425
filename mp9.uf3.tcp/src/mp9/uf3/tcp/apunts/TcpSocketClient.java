@@ -35,6 +35,7 @@ public class TcpSocketClient {
                 out.flush(); //assegurem que s'envia
                 //comprovem si la petició és un petició de finalització i en cas
                 //que ho sigui ens preparem per sortir del bucle
+                System.out.println("waiting...");
                 continueConnected = mustFinish(request);
             }
 

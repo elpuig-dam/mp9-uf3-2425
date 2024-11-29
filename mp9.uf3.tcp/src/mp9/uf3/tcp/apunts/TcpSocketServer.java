@@ -39,7 +39,7 @@ public class TcpSocketServer {
 
     public void proccesClientRequest(Socket clientSocket){
         boolean farewellMessage=false;
-        String clientMessage="";
+        String clientMessage="client connectat...";
         BufferedReader in=null;
         PrintStream out=null;
         try {
@@ -52,6 +52,7 @@ public class TcpSocketServer {
                 String dataToSend = processData(clientMessage);
                 out.println(dataToSend);
                 out.flush();
+                System.out.println("waiting...");
                 clientMessage=in.readLine();
                 farewellMessage = isFarewellMessage(clientMessage);
             }while((clientMessage)!=null && !farewellMessage);
