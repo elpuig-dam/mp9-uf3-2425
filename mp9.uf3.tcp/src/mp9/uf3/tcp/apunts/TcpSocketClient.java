@@ -48,11 +48,14 @@ public class TcpSocketClient {
     }
 
     private boolean mustFinish(String request) {
-        //TODO
+        if(request.equals("bye")) return false;
+        else return true;
     }
 
     private String getRequest(String serverData) {
-        //TODO
+        System.out.println("servidor$ " + serverData);
+        System.out.print("$ ");
+        return sc.nextLine();
     }
 
     private void close(Socket socket){

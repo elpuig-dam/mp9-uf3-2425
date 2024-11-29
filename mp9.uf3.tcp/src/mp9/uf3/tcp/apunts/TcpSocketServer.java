@@ -61,11 +61,14 @@ public class TcpSocketServer {
     }
 
     private String processData(String data) {
-        //TODO
+        System.out.println("Clientt$ " + data);
+        System.out.print("$ ");
+        return sc.nextLine();
     }
 
     private boolean isFarewellMessage(String msg) {
-       //TODO
+        if(msg.equals("bye")) return true;
+        else return false;
     }
 
     private void closeClient(Socket clientSocket){
